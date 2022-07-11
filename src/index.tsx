@@ -10,8 +10,6 @@ import "./globals/styles/reset.scss";
 import "./globals/styles/globals.scss";
 
 const root = ReactDOM.createRoot(document.getElementById("root") as HTMLElement);
-root.render(
-
-    <App />);
+root.render(<App />);
 
 reportWebVitals();

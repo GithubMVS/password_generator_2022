@@ -5,7 +5,12 @@ import styles from "./home.module.scss";
 // functions
 
 function App() {
-  return <></>;
+  return (
+    <>
+      <p className={styles.testFont1}>Really Bad</p>
+      <p className={styles.testFont2}>test font 2</p>
+    </>
+  );
 }
 
 export default App;

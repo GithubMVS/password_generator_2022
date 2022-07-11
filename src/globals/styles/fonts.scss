@@ -1,13 +1,17 @@
-/* change to different font
 @font-face {
-  font-family: "visbyRoundCF";
-  font-weight: 600;
-  src: local("VisbyRoundCF-DemiBold"), url("../fonts/VisbyRoundCF-DemiBold.woff") format("woff");
+  font-family: "Acumin";
+  font-weight: 700;
+  src: local("Acumin-Bold"), url("../fonts/Acumin-Bold.woff") format("woff");
 }
 
 @font-face {
-  font-family: "visbyRoundCF";
-  font-weight: 900;
-  src: local("VisbyRoundCF-Heavy"), url("../fonts/VisbyRoundCF-Heavy.woff") format("woff");
+  font-family: "Acumin";
+  font-weight: 400;
+  src: local("Acumin-Regular"), url("../fonts/Acumin-Regular.woff") format("woff");
 }
-*/
+
+@font-face {
+  font-family: "Newake";
+  font-weight: 400;
+  src: local("Newake-Regular"), url("../fonts/newake-400.otf") format("otf");
+}
