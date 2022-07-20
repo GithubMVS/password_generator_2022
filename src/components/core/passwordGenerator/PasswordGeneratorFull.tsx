@@ -12,7 +12,7 @@ import CharactersUsed from "./charactersUsed/characters";
 const PasswordGeneratorFull = () => {
   return (
     <section className={styles.passwordGenerator_full}>
-      <p className={styles.rate_password}>describe</p>
+      <p className={styles.rate_password}>Really Bad</p>
       <PasswordAndCopy />
       <Templates />
       <PasswordLength />

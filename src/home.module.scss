@@ -1,11 +1,21 @@
-.testFont1 {
-  font-size: 2rem;
-  font-family: Newake;
-  font-weight: 400;
+@mixin center() {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.testFont2 {
-  font-size: 2rem;
-  font-family: Acumin;
-  font-weight: 700;
+.passwordGenerator_container {
+  background-color: var(--backgroundColor);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.title {
+  @include center();
+  font-size: 10rem;
+  font-family: Newake;
+  color: var(--colorBlack);
+  font-weight: 400;
+  padding: 10rem 0rem 5rem 0rem;
 }

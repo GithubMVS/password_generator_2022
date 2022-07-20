@@ -8,8 +8,10 @@ import PasswordGenerator from "./components/core/passwordGenerator/PasswordGener
 function App() {
   return (
     <>
-      <h1 className={styles.title}>Password generator</h1>
-      <PasswordGenerator />
+      <main className={styles.passwordGenerator_container}>
+        <h1 className={styles.title}>Password generator</h1>
+        <PasswordGenerator />
+      </main>
     </>
   );
 }
