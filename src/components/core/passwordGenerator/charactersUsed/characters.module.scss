@@ -1,0 +1,73 @@
+@mixin titlesPasswordOptions() {
+  font-size: 2.5rem;
+  font-family: "Acumin";
+  font-weight: 700;
+  padding-bottom: 2.5rem;
+  padding-top: 5rem;
+  color: var(--colorBlack);
+}
+.password_characters_title {
+  @include titlesPasswordOptions();
+}
+
+.password_characters_full {
+  display: flex;
+  align-items: center;
+}
+
+.password_characters_text {
+  padding-right: 3rem;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.password_characters_inputBox {
+}
+
+.password_characters_charactersUsed {
+  font-size: 2.5rem;
+  font-family: "Acumin";
+  font-weight: 400;
+  color: var(--colorBlack);
+  padding-left: 1.5rem;
+}
+
+input[type="checkbox"] {
+  -webkit-appearance: none;
+  appearance: none;
+  background-color: var(--colorLightGrey);
+  width: 3rem;
+  height: 3rem;
+  border: 0.15em solid var(--colorGrey);
+  border-radius: 0.5em;
+  transform: translateY(-0.075em);
+  display: grid;
+  place-content: center;
+  cursor: pointer;
+  transition: 0.25s;
+}
+
+input[type="checkbox"]:hover {
+  border: 0.15em solid var(--mainColor);
+}
+
+input[type="checkbox"]::before {
+  content: "";
+  height: 1rem;
+  width: 1rem;
+  background-color: var(--mainColor);
+  clip-path: polygon(14% 44%, 0 65%, 50% 100%, 100% 16%, 80% 0%, 43% 62%);
+  transform: scale(0);
+  transform-origin: bottom left;
+  transition: 120ms transform ease-in-out;
+  box-shadow: inset 1em 1em var(--form-control-color);
+}
+
+input[type="checkbox"]:checked::before {
+  transform: scale(1);
+}
+
+input[type="checkbox"]:checked {
+  border: 0.15em solid var(--mainColor);
+}
